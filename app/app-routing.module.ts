@@ -65,6 +65,7 @@ const routes: Routes = [
     loadChildren: () =>
       import("./about/about.module").then((m) => m.AboutPageModule),
   },
+
   {
     path: "tabs",
     loadChildren: () =>
