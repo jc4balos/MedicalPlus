@@ -1,69 +1,74 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
+    path: "",
+    redirectTo: "home",
+    pathMatch: "full",
   },
   {
-    path: 'home',
+    path: "home",
     loadChildren: () =>
-      import('./home/home.module').then((m) => m.HomePageModule),
+      import("./home/home.module").then((m) => m.HomePageModule),
   },
   {
-    path: 'login',
+    path: "login",
     loadChildren: () =>
-      import('./login/login.module').then((m) => m.LoginPageModule),
+      import("./login/login.module").then((m) => m.LoginPageModule),
   },
   {
-    path: 'register',
+    path: "register",
     loadChildren: () =>
-      import('./register/register.module').then((m) => m.RegisterPageModule),
+      import("./register/register.module").then((m) => m.RegisterPageModule),
   },
   {
-    path: 'profile',
+    path: "profile",
     loadChildren: () =>
-      import('./profile/profile.module').then((m) => m.ProfilePageModule),
+      import("./profile/profile.module").then((m) => m.ProfilePageModule),
   },
   {
-    path: 'past-appointments',
+    path: "past-appointments",
     loadChildren: () =>
-      import('./past-appointments/past-appointments.module').then(
+      import("./past-appointments/past-appointments.module").then(
         (m) => m.PastAppointmentsPageModule
       ),
   },
   {
-    path: 'create-appointment',
+    path: "create-appointment",
     loadChildren: () =>
-      import('./create-appointment/create-appointment.module').then(
+      import("./create-appointment/create-appointment.module").then(
         (m) => m.CreateAppointmentPageModule
       ),
   },
   {
-    path: 'categories',
+    path: "categories",
     loadChildren: () =>
-      import('./categories/categories.module').then(
+      import("./categories/categories.module").then(
         (m) => m.CategoriesPageModule
       ),
   },
   {
-    path: 'appointment',
+    path: "appointment",
     loadChildren: () =>
-      import('./appointment/appointment.module').then(
+      import("./appointment/appointment.module").then(
         (m) => m.AppointmentPageModule
       ),
   },
   {
-    path: 'settings',
+    path: "settings",
     loadChildren: () =>
-      import('./settings/settings.module').then((m) => m.SettingsPageModule),
+      import("./settings/settings.module").then((m) => m.SettingsPageModule),
   },
   {
-    path: 'about',
+    path: "about",
     loadChildren: () =>
-      import('./about/about.module').then((m) => m.AboutPageModule),
+      import("./about/about.module").then((m) => m.AboutPageModule),
+  },
+  {
+    path: "tabs",
+    loadChildren: () =>
+      import("./tabs/tabs.module").then((m) => m.TabsPageModule),
   },
 ];
 

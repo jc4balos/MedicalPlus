@@ -2,7 +2,7 @@
   <ion-toolbar color="primary">
     <ion-buttons>
       <ion-menu-button></ion-menu-button>
-      <ion-title>Home</ion-title>
+      <ion-title>MedicalPlus</ion-title>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -11,23 +11,120 @@
   <ion-grid>
     <ion-row>
       <ion-col>
+        <h1><b>Hi User!</b></h1>
+        <h4>How can we help?</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1>Current Appointment</h1>
         <ion-card>
-          <ion-header>
-            <ion-img src="../../assets/img/appointment.jpg"></ion-img>
-          </ion-header>
-          <ion-footer
-            ><ion-button color="tertiary" expand="block">
-              <ion-icon name="add"></ion-icon>
-              <ion-label class="ion-text-capitalize"
-                >Create Appointment</ion-label
-              >
-            </ion-button>
+          <ion-card-header>
+            <ion-card-title> Dr. Myca Angela Ablaza </ion-card-title>
+            <ion-card-subtitle>Pediatrician</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item>Last Update: December 2, 2022 ; 2:34 PM </ion-item>
+              <ion-item>Diagnosis: Rhinitis </ion-item>
+              <ion-item>Status: Ongoing</ion-item>
+            </ion-list>
+          </ion-card-content>
+          <ion-footer>
+            <ion-button expand="block">Show more</ion-button>
           </ion-footer>
         </ion-card>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col> </ion-col>
+      <ion-col>
+        <ion-button color="tertiary" expand="block">
+          <ion-icon name="add"></ion-icon>
+          <ion-label class="ion-text-capitalize bold-text"
+            >Make an Appointment</ion-label
+          >
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label><b>Current Appointments</b></ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              <ion-list>
+                <ion-item>
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title> Dr. Myca Angela Ablaza </ion-card-title>
+                      <ion-card-subtitle>Pediatrician</ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content>
+                      <ion-list>
+                        <ion-item
+                          >Last Update: December 2, 2022 ; 2:34 PM
+                        </ion-item>
+                        <ion-item>Diagnosis: Rhinitis </ion-item>
+                        <ion-item>Status: Ongoing</ion-item>
+                      </ion-list>
+                    </ion-card-content>
+                    <ion-footer>
+                      <ion-button expand="block">Show more</ion-button>
+                    </ion-footer>
+                  </ion-card>
+                </ion-item>
+                <ion-item>
+                  <ion-card>
+                    <ion-card-header>
+                      <ion-card-title> Dr. Stephen Strange </ion-card-title>
+                      <ion-card-subtitle>Neurologist</ion-card-subtitle>
+                    </ion-card-header>
+                    <ion-card-content>
+                      <ion-list>
+                        <ion-item
+                          >Last Update: December 1, 2022 ; 2:34 PM
+                        </ion-item>
+                        <ion-item>Diagnosis: Alzheimer's Disease </ion-item>
+                        <ion-item>Status: Done</ion-item>
+                      </ion-list>
+                    </ion-card-content>
+                    <ion-footer>
+                      <ion-button expand="block">Show more</ion-button>
+                    </ion-footer>
+                  </ion-card>
+                </ion-item>
+              </ion-list>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLink="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="appointment">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>Appointments</ion-label>
+      <ion-badge>2</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="profile">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="settings">
+      <ion-icon name="settings"></ion-icon>
+      <ion-label>Settings</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
