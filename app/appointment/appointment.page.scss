@@ -1,0 +1,22 @@
+ion-card {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+ion-card-title,
+ion-list-header {
+  font-weight: bold;
+}
+ion-card-subtitle {
+  color: yellow;
+  font-weight: bold;
+}
+
+.transparent-bg {
+  background: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  text-indent: 20px;
+}
