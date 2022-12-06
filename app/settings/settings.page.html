@@ -1,9 +1,78 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>settings</ion-title>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button color = "light"></ion-menu-button>
+      </ion-buttons>
+
+      <ion-title>Settings</ion-title>
+      <ion-badge id = "notifications-badge-msg" color = "primary">3</ion-badge>
+      <ion-icon name = "notifications" slot="end"></ion-icon>
+      
+      <ion-img slot="end" src = "../../assets/img/prof.jpg"></ion-img>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <h4>Application Settings</h4>
+  <ion-list>
+    <ion-item>
+      <ion-label>Application Notification</ion-label>
+      <ion-toggle color="primary" mode = "ios"></ion-toggle>
+    </ion-item>
 
+    <ion-item>
+      <ion-label>Email Notification</ion-label>
+      <ion-toggle color="primary" mode = "ios"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>SMS Notification</ion-label>
+      <ion-toggle color="primary" mode = "ios"></ion-toggle>
+    </ion-item>
+
+    </ion-list>
+   
+    <h4>Accessibility</h4>
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <ion-icon name="finger-print" color = "primary"></ion-icon>
+          Fingerprint</ion-label>
+          <ion-toggle color="primary" mode = "ios"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <ion-icon name="person-circle" color = "primary"></ion-icon>
+          Face ID</ion-label>
+          <ion-toggle color="primary" mode = "ios"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Reminders</ion-label>
+        <ion-select mode = "ios" interface = "action-sheet"
+        value = "5 minutes" okText = "Okay" cancelText = "Dismiss">
+          <ion-select-option value = "5 minutes">5 minutes</ion-select-option>
+          <ion-select-option value = "10 minutes">10 minutes</ion-select-option>
+          <ion-select-option value = "15 minutes">15 minutes</ion-select-option>
+          <ion-select-option value = "30 minutes">30 minutes</ion-select-option>
+      </ion-select>
+      </ion-item>
+  </ion-list>
+
+
+  <h4>Others</h4>
+  <ion-item>
+    <ion-buttons>
+    <ion-label>Privacy and Security</ion-label>
+    </ion-buttons>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Help and Support</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label routerLink="../../about">About</ion-label>
+  </ion-item>
 </ion-content>
