@@ -3,15 +3,73 @@
     <ion-buttons>
       <ion-menu-button></ion-menu-button>
       <ion-title>Appointment</ion-title>
+      <ion-back-button></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-title>Status</ion-title>
-      <ion-title color="success">Ongoing</ion-title>
-    </ion-item>
-  </ion-list>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col style="background-color: #6370ff">
+        <ion-card class="translucent">
+          <ion-card-header>
+            <ion-card-title> Dr. Myca Angela Ablaza </ion-card-title>
+            <ion-card-subtitle>Pediatrician</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list class="transparent-bg">
+              <ion-item color="none" lines="none" class="transparent-bg"
+                >Last Update: December 2, 2022 ; 2:34 PM
+              </ion-item>
+              <ion-item color="none" lines="none" class="transparent-bg"
+                >Diagnosis: Rhinitis
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="warning">Follow Up</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="danger"
+          >Cancel Appointment</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header>Procedures</ion-list-header>
+          <ion-item>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  <ion-note class="ion-text-right"
+                    >December 1, 2022 ; 3:34 PM</ion-note
+                  >
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-label>
+                    <h2>Prescription Given</h2>
+                    <p>Summary: 1 tablet 500 mg Montelukast</p>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col><ion-button>Show Prescription</ion-button> </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
