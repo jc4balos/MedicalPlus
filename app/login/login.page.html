@@ -1,0 +1,24 @@
+<ion-content>
+  <div class="header">
+    <h3>Welcome Back! <span id="user-name"></span></h3>
+    <h1>Please Login<br />To Continue</h1>
+  </div>
+
+  <div class="form">
+    <ion-input type="email" placeholder="Email"></ion-input>
+    <ion-input type="password" placeholder="Password"></ion-input>
+  </div>
+
+  <div>
+    <ion-button class="button" color="primary" routerLink="/home">
+      <ion-label>Login</ion-label>
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="footer">
+    <h3 routerLink="/register">
+      Don't have an account? <span><br />Sign Up</span>
+    </h3>
+  </div>
+</ion-content>
