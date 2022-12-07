@@ -1,0 +1,135 @@
+<!-- settings -->
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/home"></ion-back-button>
+        <!-- <ion-menu-button color = "light"></ion-menu-button> -->
+      </ion-buttons>
+
+      <ion-title>Settings</ion-title>
+      <ion-badge id = "notifications-badge-msg" color = "primary">3</ion-badge>
+      <ion-icon name = "notifications" slot="end"></ion-icon>
+      
+      <ion-img slot="end" src = "../../assets/img/prof.jpg"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- Application Settings -->
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider mode = "ios">
+        <label>
+          Application Settings
+        </label>
+      </ion-item-divider>
+
+      <ion-item>
+        <ion-label>
+          <ion-icon name="notifications-circle" color = "primary"></ion-icon>
+          Application Notification
+        </ion-label>
+        <ion-toggle color="primary" mode = "ios"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <ion-icon name="mail" color = "primary"></ion-icon>
+          Email Notification
+        </ion-label>
+        <ion-toggle color="primary" mode = "ios"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <ion-icon name="mail-unread" color = "primary"></ion-icon>
+          SMS Notification
+        </ion-label>
+        <ion-toggle color="primary" mode = "ios"></ion-toggle>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+   
+  <!-- Accessibility -->
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider mode = "ios">
+          <label>
+            Accessibility
+          </label>
+      </ion-item-divider>
+
+      <ion-item>
+        <ion-label>
+          <ion-icon name="finger-print" color = "primary"></ion-icon>
+          Fingerprint</ion-label>
+          <ion-toggle color="primary" mode = "ios"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <ion-icon name="person-circle" color = "primary"></ion-icon>
+          Face ID</ion-label>
+          <ion-toggle color="primary" mode = "ios"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          <ion-icon name="alert-circle" color = "primary"></ion-icon>
+          Reminders</ion-label>
+        <ion-select mode = "ios" interface = "action-sheet"
+        value = "5 minutes" okText = "Okay" cancelText = "Dismiss">
+          <ion-select-option value = "5 minutes">5 minutes</ion-select-option>
+          <ion-select-option value = "10 minutes">10 minutes</ion-select-option>
+          <ion-select-option value = "15 minutes">15 minutes</ion-select-option>
+          <ion-select-option value = "30 minutes">30 minutes</ion-select-option>
+      </ion-select>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+  <!-- Others -->
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider mode = "ios">
+        <label>
+          Others
+        </label>
+      </ion-item-divider>
+      <ion-item>  
+        <div class="wrapper">
+          <div class="ion-activatable ripple-parent rounded-rectangle">
+            <ion-label>
+              <ion-icon name="lock-closed" color = "primary"></ion-icon>
+              Privacy And Security</ion-label>
+            <ion-ripple-effect></ion-ripple-effect>
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item>  
+      <div class="wrapper">
+        <div class="ion-activatable ripple-parent rounded-rectangle">
+          <ion-label>
+            <ion-icon name="help-circle" color = "primary"></ion-icon>
+            Help and Support
+          </ion-label>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </div>
+      </ion-item>
+
+      <ion-item>  
+        <div class="wrapper">
+          <div class="ion-activatable ripple-parent rounded-rectangle"  routerLink="../../about">
+            <ion-label>
+              <ion-icon name="information-circle" color = "primary"></ion-icon>
+              About
+            </ion-label>
+            <ion-ripple-effect></ion-ripple-effect>
+          </div>
+        </div>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+</ion-content>

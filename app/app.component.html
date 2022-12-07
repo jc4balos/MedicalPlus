@@ -1,0 +1,133 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="primary"><br>
+        <ion-label>Medical Plus</ion-label><br>
+        <ion-note>support@medicalplus.com</ion-note>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="log-in" slot="start"></ion-icon>
+                  <ion-label routerLink="login">Login</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="clipboard" slot="start"></ion-icon>
+                  <ion-label routerLink="register">Sign Up</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="home" slot="start"></ion-icon>
+                  <ion-label routerLink="tabs/home">Home</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+                  <ion-label routerLink="profile">Profile</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="list-outline" slot="start"></ion-icon>
+                  <ion-label routerLink="past-appointments">
+                    Past Appointments</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="calendar" slot="start"></ion-icon>
+                  <ion-label routerLink="create-appointment">
+                    Create Appointment</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="settings-outline" slot="start"></ion-icon>
+                  <ion-label routerLink="tabs/settings">Settings</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="alert-circle-outline" slot="start"></ion-icon>
+                  <ion-label routerLink="about">About</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+          
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+    <ion-footer>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item>  
+            <div class="wrapper">
+              <div class="ion-activatable ripple-parent rounded-rectangle">
+                <ion-item>
+                  <ion-icon name="log-in" slot="start"></ion-icon>
+                  <ion-label routerLink="login">Log Out</ion-label>
+                </ion-item>
+                <ion-ripple-effect></ion-ripple-effect>
+              </div>
+            </div>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-footer>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>
