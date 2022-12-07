@@ -1,10 +1,24 @@
 .square-button {
-  height: 80px !important;
+  height: 60px;
 }
 
 .bold-text {
   font-weight: bold;
 }
-ion-card {
-  background: rgba(255, 255, 255, 0.5);
+ion-card,
+ion-list {
+  background: rgba(255, 255, 255, 0);
+}
+
+.bg-image {
+  background-image: url(../../assets/img/bg-image.jpg);
+
+  backdrop-filter: hue-rotate(20deg);
+}
+
+.white-text {
+  color: white;
+}
+ion-content {
+  background-color: gray;
 }

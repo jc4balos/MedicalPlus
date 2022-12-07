@@ -1,9 +1,55 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>create_appointment</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Create Appointment</ion-title>
+      <ion-back-button defaultHref="tabs/home" slot="end"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-title> Appointment Schedule </ion-card-title>
+          <ion-header>
+            <ion-datetime></ion-datetime>
+          </ion-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header
+            >Symptoms
+            <ion-text color="medium" style="padding-left: 10px"
+              >(Put a symptom per line)</ion-text
+            ></ion-list-header
+          >
+          <ion-item>
+            <ion-textarea [autoGrow]="true" placeholder="Enter Symptoms here.">
+            </ion-textarea>
+          </ion-item>
+          <ion-list-header
+            >Description
+            <ion-text color="medium" style="padding-left: 10px"></ion-text
+          ></ion-list-header>
+          <ion-textarea
+            [autoGrow]="true"
+            placeholder="Explain what you are feeling right now.">
+          </ion-textarea>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" routerLink="/categories">
+          Proceed to Categories
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
