@@ -11,19 +11,43 @@
 <ion-content>
   <ion-grid class="ion-no-padding">
     <ion-row>
-      <ion-col style="background-color: #6370ff">
+      <ion-col style="background-image: url(../../assets/img/bg-image.jpg)">
         <ion-card class="translucent">
           <ion-card-header>
-            <ion-card-title> Dr. Myca Angela Ablaza </ion-card-title>
-            <ion-card-subtitle>Pediatrician</ion-card-subtitle>
+            <ion-card-title class="white-text">
+              Dr. Myca Angela Ablaza
+            </ion-card-title>
+            <ion-card-subtitle class="white-text"
+              >Pediatrician</ion-card-subtitle
+            >
           </ion-card-header>
           <ion-card-content>
             <ion-list class="transparent-bg">
-              <ion-item color="" lines="none"
-                >Last Update: December 2, 2022 ; 2:34 PM
+              <ion-item>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col class="ion-text-left" size="auto">
+                      <b>Last Update:</b>
+                    </ion-col>
+                    <ion-col style="padding-left: 12px">
+                      <ion-text color="medium"
+                        >December 2, 2022 ; 2:34 PM</ion-text
+                      ></ion-col
+                    >
+                  </ion-row>
+                </ion-grid>
               </ion-item>
-              <ion-item color="danger" lines="none"
-                >Diagnosis: Rhinitis
+              <ion-item color="danger">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col class="ion-text-left" size="auto">
+                      <b>Diagnosis:</b>
+                    </ion-col>
+                    <ion-col style="padding-left: 12px"
+                      ><ion-text>Rhinitis </ion-text>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
               </ion-item>
             </ion-list>
           </ion-card-content>

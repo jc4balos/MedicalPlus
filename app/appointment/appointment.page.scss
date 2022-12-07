@@ -1,9 +1,5 @@
 ion-card {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-ion-card-subtitle {
-  color: yellow;
+  background: rgba(255, 255, 255, 0);
 }
 
 .transparent-bg {
@@ -14,4 +10,8 @@ ion-card-subtitle {
 
 p {
   text-indent: 20px;
+}
+
+.white-text {
+  color: white;
 }

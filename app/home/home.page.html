@@ -10,28 +10,65 @@
 <ion-content>
   <ion-grid class="ion-no-padding">
     <ion-row>
-      <ion-col style="background-color: #6370ff">
-        <ion-title class="ion-padding" style="font-size: 30px; color: white"
-          ><b>Current Appointment</b></ion-title
-        >
+      <ion-col class="bg-image">
+        <h1 class="ion-padding" style="font-size: 30px; color: white">
+          <b>Welcome User!</b>
+        </h1>
         <ion-card>
           <ion-card-header>
-            <ion-card-title> Dr. Myca Angela Ablaza </ion-card-title>
-            <ion-card-subtitle style="color: yellow"
+            <ion-card-title class="white-text">
+              Dr. Myca Angela Ablaza
+            </ion-card-title>
+            <ion-card-subtitle class="white-text"
               >Pediatrician</ion-card-subtitle
             >
           </ion-card-header>
           <ion-card-content>
             <ion-list lines="full">
-              <ion-item
-                ><b>Last Update: December 2, 2022 ; 2:34 PM</b>
+              <ion-item>
+                <ion-grid>
+                  <ion-row>
+                    <ion-col class="ion-text-left" size="auto">
+                      <b>Last Update:</b>
+                    </ion-col>
+                    <ion-col style="padding-left: 12px">
+                      <ion-text color="medium"
+                        >December 2, 2022 ; 2:34 PM</ion-text
+                      ></ion-col
+                    >
+                  </ion-row>
+                </ion-grid>
               </ion-item>
-              <ion-item color="danger"><b>Diagnosis: Rhinitis </b> </ion-item>
-              <ion-item color="success"><b>Status: Ongoing </b></ion-item>
+              <ion-item color="danger">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col class="ion-text-left" size="auto">
+                      <b>Diagnosis:</b>
+                    </ion-col>
+                    <ion-col style="padding-left: 12px"
+                      ><ion-text>Rhinitis </ion-text>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-item>
+              <ion-item color="success">
+                <ion-grid>
+                  <ion-row>
+                    <ion-col class="ion-text-left" size="auto">
+                      <b>Status:</b>
+                    </ion-col>
+                    <ion-col style="padding-left: 12px"
+                      ><ion-text>Ongoing </ion-text>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-item>
             </ion-list>
           </ion-card-content>
           <ion-footer>
-            <ion-button expand="block">Show more</ion-button>
+            <ion-button routerLink="/appointment" expand="block"
+              >Show more</ion-button
+            >
           </ion-footer>
         </ion-card>
       </ion-col>
@@ -43,14 +80,23 @@
         <ion-button
           color="tertiary"
           expand="block"
-          class="square-button"
-          class="bold-text">
+          class="bold-text square-button"
+          routerLink="/create-appointment">
           <ion-icon name="add"></ion-icon>
           <ion-label class="ion-text-capitalize">Make an Appointment</ion-label>
         </ion-button>
       </ion-col>
+      <ion-col>
+        <ion-button expand="block" class="bold-text square-button"
+          ><ion-label class="ion-text-capitalize"
+            ><ion-icon name="person"></ion-icon>Profile</ion-label
+          ></ion-button
+        >
+      </ion-col>
     </ion-row>
-
+    <ion-row> </ion-row>
+  </ion-grid>
+  <ion-grid class="ion-no-padding">
     <ion-row>
       <ion-col>
         <ion-accordion-group [value]="['first']">
@@ -68,11 +114,20 @@
                     </ion-card-header>
                     <ion-card-content>
                       <ion-list>
-                        <ion-item
-                          >Last Update: December 2, 2022 ; 2:34 PM
+                        <ion-item>
+                          <ion-note>Last Update:</ion-note>
+                          <ion-text color="medium"
+                            >December 2, 2022 ; 2:34 PM</ion-text
+                          >
                         </ion-item>
-                        <ion-item>Diagnosis: Rhinitis </ion-item>
-                        <ion-item>Status: Ongoing</ion-item>
+                        <ion-item>
+                          <ion-note>Diagnosis:</ion-note>
+                          <ion-text color="medium"> Rhinitis</ion-text>
+                        </ion-item>
+                        <ion-item>
+                          <ion-note>Status:</ion-note>
+                          <ion-text color="medium">Ongoing</ion-text>
+                        </ion-item>
                       </ion-list>
                     </ion-card-content>
                     <ion-footer>
@@ -90,11 +145,22 @@
                     </ion-card-header>
                     <ion-card-content>
                       <ion-list>
-                        <ion-item
-                          >Last Update: December 1, 2022 ; 2:34 PM
+                        <ion-item>
+                          <ion-note>Last Update: </ion-note>
+                          <ion-text color="medium"
+                            >December 1, 2022 ; 2:34 PM</ion-text
+                          >
                         </ion-item>
-                        <ion-item>Diagnosis: Alzheimer's Disease </ion-item>
-                        <ion-item>Status: Done</ion-item>
+                        <ion-item
+                          ><ion-note>Diagnosis: </ion-note
+                          ><ion-text color="medium"
+                            >Alzheimer's Disease</ion-text
+                          >
+                        </ion-item>
+                        <ion-item
+                          ><ion-note>Status: </ion-note
+                          ><ion-text color="medium">Done</ion-text></ion-item
+                        >
                       </ion-list>
                     </ion-card-content>
                     <ion-footer>
