@@ -1,13 +1,25 @@
+<!-- register -->
 <ion-content style="border-left: 7px solid #e1395f">
   <div class="header">
-    <h3>Happy to see you!</h3>
-    <h1>Create a<br />New Account</h1>
+    <h3>Welcome to Medical Plus!</h3>
+    <h1>Create a<br/>New Account</h1>
+  </div>
+
+  <div class>
+    <ion-img src = "../../assets/img/logo.png" id = "logo"></ion-img>
   </div>
 
   <div class="form">
-    <ion-input type="email" placeholder="Email" v></ion-input>
+    <ion-input type="email" placeholder="Email" ></ion-input>
     <ion-input placeholder="Username"></ion-input>
     <ion-input type="password" placeholder="Password"></ion-input>
+  </div>
+
+  <div class="check">
+  <ion-item class="check">
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-label class="check">I agree to the terms <br>and conditions</ion-label>
+  </ion-item>
   </div>
 
   <div>
@@ -18,6 +30,6 @@
   </div>
 
   <div class="footer register-footer">
-    <h3 routerLink="/login">Already have an account? <span>Login</span></h3>
+    <h3 routerLink="/login">Already have an account? <span><br>Login</span></h3>
   </div>
 </ion-content>
