@@ -25,6 +25,22 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-ion-content {
+ion-content,
+.gray {
   --background: #f5f5f5;
+}
+
+.yellow-fade {
+  --background: rgba(255, 255, 165, 0.398);
+}
+
+.round-corner {
+  border-radius: 15px !important;
+}
+
+.section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
 }

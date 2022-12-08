@@ -1,0 +1,65 @@
+// login scss
+ion-content{
+    --ion-background-color: #39559e;
+    --background: url(../../assets/img/3.jpg) 0 0/100% 100% no-repeat;
+    border-left: 7px solid #e1395f;
+
+    
+    #logo{
+        margin-top: 500px;
+        height: 250px;
+    }
+
+
+    .button{
+        width: 45vw;
+        background-color: #e1395f;
+        margin-top: 0px;
+        // margin-left: 120px;
+        padding: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+        justify-content: center;
+            ion-icon{
+                margin-left: 10px;
+            }
+    }
+
+    .register{
+        margin-top: 50px;
+        background-color: #e1395f;
+    }
+
+    .footer{
+        color: #fff;
+        padding: 0 12vw;
+        margin-top: 70px;
+        text-align: center;
+
+        h3{
+            font-size: 1rem;
+            font-weight: 400;
+
+            span{
+                font-size: 1.2rem;
+                color: #e1395f;
+                font-weight: 600;
+                font-style: bold;
+
+            }
+        }
+    }
+
+    .register-footer{
+        margin-top: 30px;
+    }
+
+}
+
+

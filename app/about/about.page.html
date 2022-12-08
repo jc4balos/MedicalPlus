@@ -3,32 +3,59 @@
     <ion-buttons>
       <ion-menu-button></ion-menu-button>
       <ion-title>About</ion-title>
-      <ion-back-button slot="end"></ion-back-button>
+      <ion-back-button slot="end" defaultHref="tabs/home"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-title>MedicalPlus Pre-Alpha Version 1.0.0</ion-title>
-    </ion-item>
-    <ion-item>
-      <ion-label>Copyright 2022</ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-grid>
+    <ion-row>
+      <ion-col style="background-color: white">
+        <ion-title>MedicalPlus Pre-Alpha Version 1.0.0</ion-title>
+        <p>
+          MedicalPlus caters medical services online. It helps to improve the
+          health of every user through the use of this platform
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <ion-list style="margin-top: 30px">
     <ion-item>
-      <ion-label>Website</ion-label>
+      <div class="wrapper">
+        <div class="ion-activatable ripple-parent rounded-rectangle">
+          <ion-label>Website</ion-label>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </div>
     </ion-item>
     <ion-item>
-      <ion-label>Acknowledgements</ion-label>
+      <div class="wrapper">
+        <div class="ion-activatable ripple-parent rounded-rectangle">
+          <ion-label>Acknowledgements</ion-label>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </div>
     </ion-item>
     <ion-item>
-      <ion-label>Privacy Policy</ion-label>
+      <div class="wrapper">
+        <div class="ion-activatable ripple-parent rounded-rectangle">
+          <ion-label>Privacy Policy</ion-label>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </div>
     </ion-item>
     <ion-item>
-      <ion-label>Terms of Use</ion-label>
+      <div class="wrapper">
+        <div class="ion-activatable ripple-parent rounded-rectangle">
+          <ion-label>Terms of Use</ion-label>
+          <ion-ripple-effect></ion-ripple-effect>
+        </div>
+      </div>
     </ion-item>
   </ion-list>
 </ion-content>
+<ion-footer class="ion-text-center">
+  <ion-title class="ion-margin">©Copyright 2022</ion-title>
+</ion-footer>

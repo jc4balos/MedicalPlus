@@ -61,25 +61,24 @@ ion-content{
     }
 
     .button{
-        width: 40vw;
+        width: 45vw;
         background-color: #e1395f;
         margin-top: 30px;
-        margin-left: 120px;
-        padding: 10px;
-        border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
+        margin-left: 110px;
+        padding: 5px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
         display: flex;
         align-items: center;
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 400;
         justify-content: center;
             ion-icon{
-                margin-left: 20px;
+                margin-left: 15px;
             }
-    }
-
+        }
     .register{
         margin-top: 50px;
         background-color: #e1395f;

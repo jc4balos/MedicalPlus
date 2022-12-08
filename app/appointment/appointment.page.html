@@ -3,7 +3,7 @@
     <ion-buttons>
       <ion-menu-button></ion-menu-button>
       <ion-title>Appointment</ion-title>
-      <ion-back-button slot="end"></ion-back-button>
+      <ion-back-button defaultHref="tabs/home"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -11,11 +11,11 @@
 <ion-content>
   <ion-grid class="ion-no-padding">
     <ion-row>
-      <ion-col style="background-image: url(../../assets/img/bg-image.jpg)">
-        <ion-card class="translucent">
+      <ion-col style="background-color: #5260ff">
+        <ion-card class="translucent round-corner">
           <ion-card-header>
             <ion-card-title class="white-text">
-              Dr. Myca Angela Ablaza
+              <b>Dr. Myca Angela Ablaza</b>
             </ion-card-title>
             <ion-card-subtitle class="white-text"
               >Pediatrician</ion-card-subtitle
@@ -23,7 +23,7 @@
           </ion-card-header>
           <ion-card-content>
             <ion-list class="transparent-bg">
-              <ion-item>
+              <ion-item class="round-corner">
                 <ion-grid>
                   <ion-row>
                     <ion-col class="ion-text-left" size="auto">
@@ -37,7 +37,7 @@
                   </ion-row>
                 </ion-grid>
               </ion-item>
-              <ion-item color="danger">
+              <ion-item color="danger round-corner">
                 <ion-grid>
                   <ion-row>
                     <ion-col class="ion-text-left" size="auto">
@@ -70,7 +70,33 @@
       <ion-col>
         <ion-list>
           <ion-list-header><b>Procedures:</b></ion-list-header>
-          <ion-item>
+
+          <ion-item class="yellow-fade round-corner section">
+            <ion-grid>
+              <ion-row>
+                <ion-col class="ion-text-right">
+                  <ion-note>December 1, 2022 ; 4:34 PM</ion-note>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-label>
+                    <h1><ion-icon name="calendar"></ion-icon>Next Checkup</h1>
+                    <p>December 12, 2022; 12:30 PM</p>
+                  </ion-label>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col
+                  ><ion-button expand="block" color="secondary"
+                    >Join</ion-button
+                  >
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+
+          <ion-item class="gray round-corner section">
             <ion-grid>
               <ion-row>
                 <ion-col class="ion-text-right">
@@ -97,7 +123,7 @@
               </ion-row>
             </ion-grid>
           </ion-item>
-          <ion-item>
+          <ion-item class="gray round-corner section">
             <ion-grid>
               <ion-row>
                 <ion-col class="ion-text-right">
@@ -128,7 +154,7 @@
               </ion-row>
             </ion-grid>
           </ion-item>
-          <ion-item>
+          <ion-item class="gray round-corner section">
             <ion-grid>
               <ion-row>
                 <ion-col class="ion-text-right">
